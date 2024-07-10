@@ -25,8 +25,9 @@ header {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-bottom: 20px;  /* Adds space below the image */
+    object-fit: cover;
 }
+
 
 
 header a {
