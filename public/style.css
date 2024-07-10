@@ -21,6 +21,14 @@ header {
     text-align: center;
 }
 
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;  /* Adds space below the image */
+}
+
+
 header a {
     color: #f4f4f4;
     text-decoration: none;
