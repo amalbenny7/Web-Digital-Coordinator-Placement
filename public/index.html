@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amal Benny's Resume</title>
     <link rel="stylesheet" href="style.css">
-    <img src="/public/images/profile.jpg" alt="Profile Picture of Amal Benny" class="profile-pic">
-    <h1>Amal Benny</h1>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="mb-4">
+        <button id="nav-toggle" class="btn btn-primary mb-2" aria-label="Toggle Navigation">Menu</button>
         <h1>Amal Benny</h1>
         <p>Phone: (+44) 7990495959 | Email: <a href="mailto:amalbenny.contact@gmail.com">amalbenny.contact@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/amalbenny7">amalbenny7</a> | LinkedIn: <a href="https://www.linkedin.com/in/amal-benny-b49153157/">amal-benny-b49153157</a></p>
         <p>Address: Nottingham, United Kingdom</p>
+        <img src="images/profile.jpg" alt="Profile Picture of Amal Benny" class="profile-pic img-thumbnail">
+
     </header>
-    <section>
+    <nav id="nav-links" style="display: none;" class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#work-experience">Work Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education-training">Education and Training</a></li>
+            <li class="nav-item"><a class="nav-link" href="#digital-skills">Digital Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+            <li class="nav-item"><a class="nav-link" href="#licenses-certifications">Licenses & Certifications</a></li>
+        </ul>
+    </nav>
+    <section id="work-experience" class="mb-4">
         <h2>Work Experience</h2>
+        <button class="btn btn-info toggle-visibility" data-target="work-experience">Toggle Visibility</button>
         <article>
             <h3>Junior Quality Analyst - Reflections Info Systems Pvt Ltd</h3>
             <p>Duration: 01/07/2022 – 28/07/2023</p>
@@ -61,8 +74,9 @@
             </ul>
         </article>
     </section>
-    <section>
+    <section id="education-training" class="mb-4">
         <h2>Education and Training</h2>
+        <button class="btn btn-info toggle-visibility" data-target="education-training">Toggle Visibility</button>
         <article>
             <h3>MSc Cloud and Enterprise Computing - Nottingham Trent University</h3>
             <p>Duration: 25/09/2023 – Current</p>
@@ -83,8 +97,9 @@
             </ul>
         </article>
     </section>
-    <section>
+    <section id="digital-skills" class="mb-4">
         <h2>Digital Skills</h2>
+        <button class="btn btn-info toggle-visibility" data-target="digital-skills">Toggle Visibility</button>
         <ul>
             <li>Java, Automation Testing, JAVAFX</li>
             <li>DevOps: Docker, Jenkins</li>
@@ -93,8 +108,9 @@
             <li>SEO, DATABASE: SQL, SQL Lite</li>
         </ul>
     </section>
-    <section>
+    <section id="projects" class="mb-4">
         <h2>Projects</h2>
+        <button class="btn btn-info toggle-visibility" data-target="projects">Toggle Visibility</button>
         <article>
             <h3>Flight Booking System Full Stack Development</h3>
             <p>Duration: 10/01/2023 – 14/03/2024</p>
@@ -114,27 +130,29 @@
                 <li>Ensured data security through AES encryption for file transactions.</li>
                 <li>Engineered a scalable solution with Docker for distributed file storage.</li>
                 <li>Introduced audit trails and sophisticated access controls for improved security and file management.</li>
-            </ul>
+            </ul
         </article>
     </section>
-    <section>
+    <section id="publications" class="mb-4">
         <h2>Publications</h2>
+        <button class="btn btn-info toggle-visibility" data-target="publications">Toggle Visibility</button>
         <article>
             <p><strong>Blockchain Based Medical Data Sharing and Protection Scheme</strong></p>
             <p>As lead author, I stress EHRs' value and address privacy concerns, exploring blockchain solutions in this paper.</p>
             <p>Publication Link: <a href="https://www.irjet.net/archives/V7/i7/IRJET-V7I7807.pdf">IRJET Journal</a></p>
         </article>
     </section>
-    <section>
+    <section id="licenses-certifications" class="mb-4">
         <h2>Licenses & Certifications</h2>
+        <button class="btn btn-info toggle-visibility" data-target="licenses-certifications">Toggle Visibility</button>
         <ul>
             <li>Selenium Java 101 certification by LambdaTest (03/2023)</li>
             <li>Katalon Studio - Expert Level Certification (01/2023 – 01/2025)</li>
         </ul>
     </section>
-    <footer>
+    <footer class="bg-dark text-white p-3 text-center fixed-bottom">
         <p>© 2024 Amal Benny - All rights reserved.</p>
-    </footer>git push -u origin main
-
+    </footer>
+    <script src="/js/script.js"></script>
 </body>
 </html>
